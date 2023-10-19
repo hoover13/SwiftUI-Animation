@@ -16,4 +16,8 @@ struct Sitcom {
     func doSomething() {
         print("I love sitcoms")
     }
+
+    func filterSitcoms {
+        print("Filter from Sitcoms to Favorite")
+    }
 }
