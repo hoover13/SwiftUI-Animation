@@ -12,17 +12,22 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView {
-            VStack {
-                List(people, id: \.self) { person in
-                        Text(person)
+            NavigationLink {
+                DetailView()
+            } label: {
+                VStack {
+                    List(people, id: \.self) { person in
+                            Text(person)
+                    }
+                    .navigationTitle("Young Sheldon")
+                    
+                    List(people, id: \.self) { person in
+                            Text(person)
+                    }
+                    .navigationTitle("Young Sheldon")
                 }
-                .navigationTitle("Young Sheldon")
-                
-                List(people, id: \.self) { person in
-                        Text(person)
-                }
-                .navigationTitle("Young Sheldon")
-            }        
+            }
+
         }
     }
 }
