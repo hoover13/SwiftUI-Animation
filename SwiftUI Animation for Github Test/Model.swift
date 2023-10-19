@@ -12,4 +12,8 @@ struct Sitcom {
     var name: String
     var image: String
     var people: [String]
+    
+    func doSomething() {
+        print("I love sitcoms")
+    }
 }
